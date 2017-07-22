@@ -16,6 +16,7 @@ export default class Car implements IVehicle {
 
     start(): void {
         console.log("Start! has booster : " + this._hasNitrogenBooster);
+        console.log("Start! add max speed : " + this._maxSpeed);
     }
 
     stop(): void {
@@ -32,5 +33,11 @@ export default class Car implements IVehicle {
         }
 
         this._hasNitrogenBooster = hasNitrogenBooster;
+    }
+}
+
+export class SuperCar extends Car {
+    constructor(numberOfWheels: number, maxSpeed: number) {
+        super(numberOfWheels, maxSpeed, true);
     }
 }
