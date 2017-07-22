@@ -1,13 +1,12 @@
 /*
-declare class ErrorHandler {
+declare class ErrorHandler {    // use this when rename file to error-handler.d.ts
 
     setError(element: HTMLInputElement): void;
     removeError(element: HTMLInputElement): void;
 }
 */
 
-/*
-export class ErrorHandler {
+export default class ErrorHandler {
     private static ERROR: string = ' has-error has-feedback';
 
     setError = (element: HTMLInputElement): void => {
@@ -27,4 +26,3 @@ export class ErrorHandler {
         element.parentElement.className = className;
     }
 }
-*/

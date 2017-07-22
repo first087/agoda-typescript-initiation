@@ -6,7 +6,8 @@
   "author": "Agoda",
   "license": "MIT",
   "scripts": {
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "http-server": "http-server"
   },
   "devDependencies": {
     "@types/jquery": "^3.2.9",
