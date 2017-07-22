@@ -15,10 +15,22 @@ export default class Car implements IVehicle {
     }
 
     start(): void {
-        console.log("Start!");
+        console.log("Start! has booster : " + this._hasNitrogenBooster);
     }
 
     stop(): void {
         console.log("Stop!");
+    }
+
+    get HasNitrogenBooster(): boolean {
+        return this._hasNitrogenBooster;
+    }
+
+    set HasNitrogenBooster(hasNitrogenBooster: boolean) {
+        if (hasNitrogenBooster) {
+            this._maxSpeed += 50;
+        }
+
+        this._hasNitrogenBooster = hasNitrogenBooster;
     }
 }
