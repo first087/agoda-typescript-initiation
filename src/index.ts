@@ -1,4 +1,4 @@
-import MyVariable from './course/variables';
+import Car from './course/car';
 
-let myVariable: MyVariable = new MyVariable();
-myVariable.usingLet();
+let car: Car = new Car(4, 100);
+car.start();
